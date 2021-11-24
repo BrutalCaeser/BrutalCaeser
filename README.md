@@ -1,7 +1,7 @@
 - Hi, I’m @BrutalCaeser
 - I’m interested in Deep Learning especially Computer Vision
-- 🌱 I’m currently learning Tensorflow 
-- 💞️ I’m looking to collaborate on DL projects with advanced Tensorflow implementation 
+- I’m currently learning Tensorflow 
+- I’m looking to collaborate on DL projects with advanced Tensorflow implementation 
 -
 
 <!---
