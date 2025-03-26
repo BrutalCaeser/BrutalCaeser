@@ -1,7 +1,7 @@
-- Hi, I’m @BrutalCaeser
-- I’m interested in Deep Learning especially Computer Vision and calculus
-- I’m currently learning advanced Tensorflow techniques
-- I’m looking to collaborate on DL projects with real world problem solving
+- Hi, I’m @BrutalCaeser and I am a curious being!
+- I am interested in Deep Learnint, Reinforcement Learning, RAG models. 
+- I’m currently learning how to implement and make fully automated RAG systems 
+- I’m looking to collaborate on ML-DL, RAG, Agentic projects with real world problem solving
 
 
 <!---
