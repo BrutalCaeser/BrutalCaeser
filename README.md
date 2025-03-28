@@ -1,7 +1,7 @@
 - Hi, I’m @BrutalCaeser and I am a curious being!
-- I am interested in Deep Learnint, Reinforcement Learning, RAG models. 
-- I’m currently learning how to implement and make fully automated RAG systems 
-- I’m looking to collaborate on ML-DL, RAG, Agentic projects with real world problem solving
+- I am interested in Deep Learning, Reinforcement Learning, RAG models. 
+- I’m currently learning how to implement and make fully automated RAG systems
+- I’m looking to collaborate on ML-DL, RAG, Agentic projects.
 
 
 <!---
