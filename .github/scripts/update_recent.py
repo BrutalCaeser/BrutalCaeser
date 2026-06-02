@@ -59,6 +59,36 @@ def card(repo):
     )
 
 
+def lang_bar(repos):
+    """Most-used languages across owned public, non-fork repos, as shields."""
+    counts = {}
+    for r in repos:
+        if r["fork"] or r["private"] or r.get("archived"):
+            continue
+        lang = r.get("language")
+        if lang:
+            counts[lang] = counts.get(lang, 0) + 1
+    total = sum(counts.values())
+    if not total:
+        return '<p align="center"><sub>—</sub></p>'
+    top = sorted(counts.items(), key=lambda kv: -kv[1])[:8]
+    badges = []
+    for lang, n in top:
+        pct = round(100 * n / total)
+        color = LANG_COLORS.get(lang, "586069")
+        label = lang.replace(" ", "%20").replace("+", "%2B").replace("-", "--")
+        badges.append(
+            f'<img src="https://img.shields.io/badge/{label}-{pct}%25-{color}'
+            f'?style=flat-square&labelColor=0d1117"/>'
+        )
+    return '<p align="center">\n  ' + "\n  ".join(badges) + "\n</p>"
+
+
+def replace_block(content, start, end, body):
+    block = f"{start}\n{body}\n{end}"
+    return re.sub(re.escape(start) + r".*?" + re.escape(end), block, content, flags=re.DOTALL)
+
+
 def main():
     repos = api(f"/users/{USER}/repos?per_page=100&sort=pushed&type=owner")
     picks = [
@@ -71,16 +101,16 @@ def main():
     for i in range(0, len(picks), 2):
         rows.append("  <tr>\n    " + "\n    ".join(card(r) for r in picks[i:i + 2]) + "\n  </tr>")
     table = "<table>\n" + "\n".join(rows) + "\n</table>"
-    block = f"{START}\n{table}\n{END}"
 
     with open(README, encoding="utf-8") as f:
         content = f.read()
-    new = re.sub(re.escape(START) + r".*?" + re.escape(END), block, content, flags=re.DOTALL)
+    new = replace_block(content, START, END, table)
+    new = replace_block(new, "<!--LANGS:START-->", "<!--LANGS:END-->", lang_bar(repos))
 
     if new != content:
         with open(README, "w", encoding="utf-8") as f:
             f.write(new)
-        print(f"Updated with {len(picks)} repos.")
+        print(f"Updated: {len(picks)} repos + language bar.")
     else:
         print("No change.")
 

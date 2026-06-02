@@ -69,10 +69,24 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=BrutalCaeser&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=238636&text_color=c9d1d9&count_private=true" alt="stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrutalCaeser&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58A6FF&text_color=c9d1d9&langs_count=8" alt="top langs"/>
+<img src="https://img.shields.io/github/followers/BrutalCaeser?style=for-the-badge&logo=github&color=238636&labelColor=0d1117&label=Followers"/>
+<img src="https://img.shields.io/github/stars/BrutalCaeser?affiliations=OWNER&style=for-the-badge&logo=github&color=58A6FF&labelColor=0d1117&label=Stars"/>
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FBrutalCaeser&query=public_repos&label=Public%20Repos&style=for-the-badge&color=8B5CF6&labelColor=0d1117&logo=git"/>
+
+**Most-used languages**
 
 </div>
+
+<!--LANGS:START-->
+<p align="center">
+  <img src="https://img.shields.io/badge/Jupyter%20Notebook-47%25-DA5B0B?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Python-38%25-3776AB?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Shell-6%25-89E051?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/SCSS-3%25-CC6699?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/TypeScript-3%25-3178C6?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/JavaScript-3%25-F7DF1E?style=flat-square&labelColor=0d1117"/>
+</p>
+<!--LANGS:END-->
 
 <!-- Contribution snake — regenerated daily by .github/workflows/snake.yml -->
 <picture>
