@@ -41,16 +41,16 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 <!--RECENT_PROJECTS:START-->
 <table>
   <tr>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/BrutalCaeser.github.io"><b>BrutalCaeser.github.io</b></a><br><sub>Created from HugoBlox template: theme-academic-cv</sub><br><img src="https://img.shields.io/badge/SCSS-CC6699?style=flat-square"/></td>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/Diffusion_Robot_Control_Policy"><b>Diffusion_Robot_Control_Policy</b></a><br><sub>—</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-  </tr>
-  <tr>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/spatial-jepa-sigreg"><b>spatial-jepa-sigreg</b></a><br><sub>GAP 1: Distributional Regularization Meets Spatial Structure — SIGReg × Patch-Level JEPA Representations (N…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/matrix-game-hpc"><b>matrix-game-hpc</b></a><br><sub>Matrix-Game-2.0 deployment on Northeastern Explorer HPC — docs, logs, and scripts</sub></td>
   </tr>
   <tr>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/matrix-game-hpc"><b>matrix-game-hpc</b></a><br><sub>Matrix-Game-2.0 deployment on Northeastern Explorer HPC — docs, logs, and scripts</sub></td>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/storyverse"><b>storyverse</b></a><br><sub>Turn any children's storybook into an animated film — FLUX illustrations, Wan 2.2 animation, Edge TTS narra…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
+  </tr>
+  <tr>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/Job_Hunter"><b>Job_Hunter</b></a><br><sub>Autonomous internship application agent — discovers jobs, fills applications deterministically, runs 24/7 o…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/jarvis-ai"><b>jarvis-ai</b></a><br><sub>Personal AI agent website — A2A proxy endpoint, agent discovery, and portfolio landing page for Jarvis</sub><br><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square"/></td>
   </tr>
 </table>
 <!--RECENT_PROJECTS:END-->

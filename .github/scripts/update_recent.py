@@ -17,7 +17,8 @@ COUNT = 6
 README = "README.md"
 
 # Repos surfaced elsewhere on the profile; skip so the list stays fresh.
-SKIP = {"BrutalCaeser", "block-diffusion-pareto", "physical_ai", "microDLM", "minigenie"}
+SKIP = {"BrutalCaeser", "BrutalCaeser.github.io", "block-diffusion-pareto",
+        "physical_ai", "microDLM", "minigenie"}
 
 LANG_COLORS = {
     "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
