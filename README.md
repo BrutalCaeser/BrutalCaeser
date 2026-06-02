@@ -13,13 +13,15 @@
 
 ### 👋 Hey, I'm Yash
 
-MS AI student at **Northeastern University** (Silicon Valley) researching how generative models learn the structure of language, video, and the physical world. Mechanical engineer by training, so I tend to care less about benchmarks and more about *why* a method actually works.
+I'm an MS AI student at **Northeastern University** (Silicon Valley), trying to understand how generative models learn the structure of language, video, and the physical world. I came in through mechanical engineering, so I'm less interested in chasing leaderboards and more in the math underneath — calculus and Bayesian probability are the parts that actually feel right to me, and they happen to be the spine of diffusion and flow-based modeling.
 
-- 🔬 Mostly thinking about **diffusion / flow-matching language models**, **video world models**, and **representation collapse** in self-supervised learning.
-- 🛠️ Currently an **AI/GenAI Engineering Co-op at NovasIQ** — building deterministic agentic systems on Claude + MCP.
-- 🎓 Was a **Reinforcement Learning TA** at Khoury College (DQN, PPO, policy gradients).
-- ✍️ I write up most of my experiments — the negative results too. Reproducibility over hype.
-- 📫 Reach me at **gupta.yashv@northeastern.edu** — always happy to talk world models, diffusion LMs, or robotics.
+Most of what I build doesn't work the first time. I've had research bets collapse — entropy-weighted masking, SIGReg representation lines — and I've learned that the rigor of chasing them down is the real asset. So I write up the negative results too, and I'm still hunting for the problem that feels *inevitable* and *mine*.
+
+- 🔬 Thinking about **diffusion / flow-matching language models**, **video world models**, and **representation collapse** in SSL.
+- 🛠️ Right now: **AI/GenAI Engineering Co-op at NovasIQ** — deterministic agentic systems on Claude + MCP.
+- 🎓 Previously a **Reinforcement Learning TA** at Khoury College (DQN, PPO, policy gradients).
+- 🌱 Long game: a startup in robotics / physical intelligence, or an AI layer over the legacy software that bottlenecks real industries.
+- 📫 **gupta.yashv@northeastern.edu** — always up for a conversation about world models, diffusion LMs, or robots.
 
 ---
 
@@ -29,7 +31,7 @@ MS AI student at **Northeastern University** (Silicon Valley) researching how ge
 |---|---|
 | 🧩 **[block-diffusion-pareto](https://github.com/BrutalCaeser/block-diffusion-pareto)** | Why is block size 32 the production sweet spot for block-diffusion LMs? Mapping quality vs. throughput vs. KV-cache. |
 | 🤖 **[physical_ai](https://github.com/BrutalCaeser/physical_ai)** | A 16-week sim-to-real track: Isaac Lab → GR00T → SO-ARM101. |
-| 🌊 **[microDLM](https://github.com/BrutalCaeser/microDLM)** | A discrete diffusion language model from scratch — just 5 changes away from a GPT. |
+| 🌊 **[microDLM](https://github.com/BrutalCaeser/microDLM)** | A discrete diffusion language model from scratch — only 5 changes away from a GPT. (Hypothesis lost; uniform masking won — [I wrote it up anyway](https://brutalcaeser.github.io/).) |
 | 🎮 **[minigenie](https://github.com/BrutalCaeser/minigenie)** | A flow-matching video world model for Procgen, built from scratch in PyTorch. |
 
 ---
@@ -57,16 +59,11 @@ MS AI student at **Northeastern University** (Silicon Valley) researching how ge
 
 ### 🧰 Tools I reach for
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![JAX](https://img.shields.io/badge/JAX%2FFlax-D35400?style=flat-square&logo=google&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
-![CUDA](https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude%20%2B%20MCP-D97757?style=flat-square&logo=anthropic&logoColor=white)
+<p>
+<img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,opencv,fastapi,flask,docker,kubernetes,aws,gcp,git,linux,bash&perline=14" alt="tech stack"/>
+</p>
+
+<sub>+ JAX/Flax · CUDA · Hugging Face · Claude + MCP · ONNX</sub>
 
 ---
 
@@ -77,12 +74,19 @@ MS AI student at **Northeastern University** (Silicon Valley) researching how ge
 
 </div>
 
+<!-- Contribution snake — regenerated daily by .github/workflows/snake.yml -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BrutalCaeser/BrutalCaeser/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BrutalCaeser/BrutalCaeser/output/github-snake.svg"/>
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/BrutalCaeser/BrutalCaeser/output/github-snake.svg" width="100%"/>
+</picture>
+
 ---
 
 <div align="center">
 
-*Outside of research: chess, tennis, and a book on the nightstand (currently <b>To Kill a Mockingbird</b>).*
+*Away from the screen: chess, tennis, and a slow walk through a philosophy reading list — right now it's<br><b>To Kill a Mockingbird</b>, with Russell's <i>The Problems of Philosophy</i> on deck. Borrowed beliefs bore me.*
 
-<sub>📊 The "things I've built" list updates automatically every week via GitHub Actions.</sub>
+<sub>📊 The "things I've built" list and the snake above both refresh themselves on a schedule — so this page is never quite stale.</sub>
 
 </div>
