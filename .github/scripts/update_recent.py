@@ -18,7 +18,7 @@ README = "README.md"
 
 # Repos surfaced elsewhere on the profile; skip so the list stays fresh.
 SKIP = {"BrutalCaeser", "BrutalCaeser.github.io", "block-diffusion-pareto",
-        "physical_ai", "microDLM", "minigenie"}
+        "phantom-gradients", "Flow-Language-Model", "physical_ai"}
 
 LANG_COLORS = {
     "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
