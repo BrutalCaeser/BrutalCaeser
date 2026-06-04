@@ -30,6 +30,7 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 | | |
 |---|---|
+| 🎯 **[reinforcing_dLLMs](https://github.com/BrutalCaeser/reinforcing_dLLMs)** | Reinforcement learning (diffu-GRPO) to make diffusion LLMs reason. A faithful reproduction is ~24 GPU-days, so I rebuilt the mechanism for a single GPU — baseline reproduced clean, now chasing a real gain. |
 | 🧩 **[block-diffusion-pareto](https://github.com/BrutalCaeser/block-diffusion-pareto)** | Mapped the full quality↔throughput frontier for block-diffusion LMs and found generation throughput peaks at **block size 32** — the unpublished value a leading commercial model reportedly runs. |
 | 🌀 **[phantom-gradients](https://github.com/BrutalCaeser/phantom-gradients)** | When a model's useful features live in far fewer dimensions than its embedding, training fights noise in the empty ones. A coherence-guided sampler recovers the structure without knowing the true dimension, beating even an oracle that does. |
 | 🌊 **[Flow-Language-Model](https://github.com/BrutalCaeser/Flow-Language-Model)** | Reproducing and extending Flow-Map language models (one-step text generation), where I found a quality curve the original paper missed. |
@@ -88,8 +89,8 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 <!--LANGS:START-->
 <p align="center">
-  <img src="https://img.shields.io/badge/Jupyter%20Notebook-45%25-DA5B0B?style=flat-square&labelColor=0d1117"/>
-  <img src="https://img.shields.io/badge/Python-42%25-3776AB?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Python-44%25-3776AB?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Jupyter%20Notebook-44%25-DA5B0B?style=flat-square&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/JavaScript-6%25-F7DF1E?style=flat-square&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/Shell-3%25-89E051?style=flat-square&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/TypeScript-3%25-3178C6?style=flat-square&labelColor=0d1117"/>
