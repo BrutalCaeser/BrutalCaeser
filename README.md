@@ -30,7 +30,7 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 | | |
 |---|---|
-| 🎯 **[reinforcing_dLLMs](https://github.com/BrutalCaeser/reinforcing_dLLMs)** | Reinforcement learning (diffu-GRPO) to make diffusion LLMs reason. A faithful reproduction is ~24 GPU-days, so I rebuilt the mechanism for a single GPU — baseline reproduced clean, now chasing a real gain. |
+| 🎯 **[reinforcing_dLLMs](https://github.com/BrutalCaeser/reinforcing_dLLMs)** | Reinforcement learning (diffu-GRPO) for reasoning in diffusion LLMs. I validated the one-step log-prob estimator the method hinges on, then showed RL lifts held-out Countdown ~4 pp on a single GPU (a faithful run is ~24 GPU-days). |
 | 🧩 **[block-diffusion-pareto](https://github.com/BrutalCaeser/block-diffusion-pareto)** | Mapped the full quality↔throughput frontier for block-diffusion LMs and found generation throughput peaks at **block size 32** — the unpublished value a leading commercial model reportedly runs. |
 | 🌀 **[phantom-gradients](https://github.com/BrutalCaeser/phantom-gradients)** | When a model's useful features live in far fewer dimensions than its embedding, training fights noise in the empty ones. A coherence-guided sampler recovers the structure without knowing the true dimension, beating even an oracle that does. |
 | 🌊 **[Flow-Language-Model](https://github.com/BrutalCaeser/Flow-Language-Model)** | Reproducing and extending Flow-Map language models (one-step text generation), where I found a quality curve the original paper missed. |
