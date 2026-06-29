@@ -51,16 +51,16 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 <!--RECENT_PROJECTS:START-->
 <table>
   <tr>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/opsgraph"><b>opsgraph</b></a><br><sub>—</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/Diffusion_Robot_Control_Policy"><b>Diffusion_Robot_Control_Policy</b></a><br><sub>—</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
+  </tr>
+  <tr>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/microDLM"><b>microDLM</b></a> ⭐ 1<br><sub>From-scratch discrete diffusion language model on Tiny Shakespeare — 5 changes from GPT</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-  </tr>
-  <tr>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/spatial-jepa-sigreg"><b>spatial-jepa-sigreg</b></a><br><sub>GAP 1: Distributional Regularization Meets Spatial Structure — SIGReg × Patch-Level JEPA Representations (N…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/matrix-game-hpc"><b>matrix-game-hpc</b></a><br><sub>Matrix-Game-2.0 deployment on Northeastern Explorer HPC — docs, logs, and scripts</sub></td>
   </tr>
   <tr>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/matrix-game-hpc"><b>matrix-game-hpc</b></a><br><sub>Matrix-Game-2.0 deployment on Northeastern Explorer HPC — docs, logs, and scripts</sub></td>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/storyverse"><b>storyverse</b></a><br><sub>Turn any children's storybook into an animated film — FLUX illustrations, Wan 2.2 animation, Edge TTS narra…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/minigenie"><b>minigenie</b></a><br><sub>Flow matching video world model for Procgen games — built from scratch in PyTorch</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
   </tr>
 </table>
 <!--RECENT_PROJECTS:END-->
@@ -89,8 +89,8 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 <!--LANGS:START-->
 <p align="center">
-  <img src="https://img.shields.io/badge/Jupyter%20Notebook-45%25-DA5B0B?style=flat-square&labelColor=0d1117"/>
-  <img src="https://img.shields.io/badge/Python-42%25-3776AB?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Python-44%25-3776AB?style=flat-square&labelColor=0d1117"/>
+  <img src="https://img.shields.io/badge/Jupyter%20Notebook-44%25-DA5B0B?style=flat-square&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/JavaScript-6%25-F7DF1E?style=flat-square&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/Shell-3%25-89E051?style=flat-square&labelColor=0d1117"/>
   <img src="https://img.shields.io/badge/TypeScript-3%25-3178C6?style=flat-square&labelColor=0d1117"/>
