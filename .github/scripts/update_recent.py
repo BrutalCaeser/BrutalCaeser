@@ -18,8 +18,7 @@ README = "README.md"
 
 # Repos surfaced elsewhere on the profile; skip so the list stays fresh.
 SKIP = {"BrutalCaeser", "BrutalCaeser.github.io", "reinforcing_dLLMs",
-        "block-diffusion-pareto", "phantom-gradients", "Flow-Language-Model",
-        "physical_ai"}
+        "block-diffusion-pareto", "phantom-gradients", "Flow-Language-Model"}
 
 LANG_COLORS = {
     "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
@@ -43,7 +42,7 @@ def api(path):
 
 def card(repo):
     name = repo["name"]
-    desc = (repo.get("description") or "").strip() or "—"
+    desc = (repo.get("description") or "").strip()
     if len(desc) > 110:
         desc = desc[:107].rstrip() + "…"
     lang = repo.get("language")
@@ -54,10 +53,10 @@ def card(repo):
         badge = f'<br><img src="https://img.shields.io/badge/{label}-{color}?style=flat-square"/>'
     stars = repo.get("stargazers_count", 0)
     star = f" ⭐ {stars}" if stars else ""
+    sub = f'<br><sub>{desc}</sub>' if desc else ''
     return (
         f'<td align="center" width="50%" valign="top">'
-        f'<a href="{repo["html_url"]}"><b>{name}</b></a>{star}<br>'
-        f'<sub>{desc}</sub>{badge}</td>'
+        f'<a href="{repo["html_url"]}"><b>{name}</b></a>{star}{sub}{badge}</td>'
     )
 
 

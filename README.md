@@ -19,7 +19,8 @@ I'm an MS AI student at **Northeastern University** (Silicon Valley), trying to 
 Most of what I build doesn't work the first time. I've had research bets collapse (entropy-weighted masking, SIGReg representation lines), and the rigor of chasing them down is the real asset. So I write up the negative results too, and I'm still hunting for the problem that feels *inevitable* and *mine*.
 
 - 🔬 Working on **diffusion / flow-matching language models**, **video world models**, and **representation collapse** in self-supervised learning.
-- 🛠️ Currently an **AI/GenAI Engineering Co-op at NovasIQ**, building deterministic agentic systems on Claude + MCP.
+- 🦾 Co-founded **[Φ (Physical Hardware Intelligence)](https://physical-hardware-intelligence.github.io/)**, Northeastern Silicon Valley's first student robotics club. We build robots that learn on the open SO-ARM101 arm, and I designed and built the club's site.
+- 🛠️ **AI/GenAI Engineering Co-op at NovasIQ**, building deterministic agentic systems on Claude + MCP.
 - 🎓 Reinforcement Learning **teaching assistant** at Khoury College (DQN, PPO, policy gradients).
 - 🌱 Long game: a startup in robotics / physical intelligence, or an AI layer over the legacy software that bottlenecks real industries.
 - 🔗 **Full portfolio, projects & writing → [brutalcaeser.github.io](https://brutalcaeser.github.io/)**
@@ -30,11 +31,11 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 | | |
 |---|---|
+| 🦾 **[Φ (Physical Hardware Intelligence)](https://github.com/physical-hardware-intelligence/phi)** | The robotics club I co-founded at Northeastern SV: an open robot-learning pipeline on the SO-ARM101 arm (teleoperate, record, train, deploy). I also designed and built the [club site](https://physical-hardware-intelligence.github.io/). |
 | 🎯 **[reinforcing_dLLMs](https://github.com/BrutalCaeser/reinforcing_dLLMs)** | Reinforcement learning (diffu-GRPO) for reasoning in diffusion LLMs. I validated the one-step log-prob estimator the method hinges on, then showed RL lifts held-out Countdown ~4 pp on a single GPU (a faithful run is ~24 GPU-days). |
-| 🧩 **[block-diffusion-pareto](https://github.com/BrutalCaeser/block-diffusion-pareto)** | Mapped the full quality↔throughput frontier for block-diffusion LMs and found generation throughput peaks at **block size 32** — the unpublished value a leading commercial model reportedly runs. |
+| 🧩 **[block-diffusion-pareto](https://github.com/BrutalCaeser/block-diffusion-pareto)** | Mapped the full quality↔throughput frontier for block-diffusion LMs and found generation throughput peaks at **block size 32**, the unpublished value a leading commercial model reportedly runs. |
 | 🌀 **[phantom-gradients](https://github.com/BrutalCaeser/phantom-gradients)** | When a model's useful features live in far fewer dimensions than its embedding, training fights noise in the empty ones. A coherence-guided sampler recovers the structure without knowing the true dimension, beating even an oracle that does. |
 | 🌊 **[Flow-Language-Model](https://github.com/BrutalCaeser/Flow-Language-Model)** | Reproducing and extending Flow-Map language models (one-step text generation), where I found a quality curve the original paper missed. |
-| 🤖 **[physical_ai](https://github.com/BrutalCaeser/physical_ai)** | A 16-week sim-to-real track: Isaac Lab → GR00T → SO-ARM101. |
 
 ---
 
@@ -51,16 +52,16 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 <!--RECENT_PROJECTS:START-->
 <table>
   <tr>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/opsgraph"><b>opsgraph</b></a><br><sub>—</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/Diffusion_Robot_Control_Policy"><b>Diffusion_Robot_Control_Policy</b></a><br><sub>—</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/opsgraph"><b>opsgraph</b></a><br><sub>Enterprise three-way-match reconciliation on a Neo4j operational-intelligence graph, with an agentic-RAG la…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/physical_ai"><b>physical_ai</b></a><br><sub>Phase 0 -> Phase 3 implementation of 16-week Physical AI Mastery Plan: Isaac Lab + GR00T + SO-ARM101 sim-to…</sub><br><img src="https://img.shields.io/badge/Shell-89E051?style=flat-square"/></td>
   </tr>
   <tr>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/Diffusion_Robot_Control_Policy"><b>Diffusion_Robot_Control_Policy</b></a><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/microDLM"><b>microDLM</b></a> ⭐ 1<br><sub>From-scratch discrete diffusion language model on Tiny Shakespeare — 5 changes from GPT</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/spatial-jepa-sigreg"><b>spatial-jepa-sigreg</b></a><br><sub>GAP 1: Distributional Regularization Meets Spatial Structure — SIGReg × Patch-Level JEPA Representations (N…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
   </tr>
   <tr>
+    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/spatial-jepa-sigreg"><b>spatial-jepa-sigreg</b></a><br><sub>GAP 1: Distributional Regularization Meets Spatial Structure — SIGReg × Patch-Level JEPA Representations (N…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
     <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/matrix-game-hpc"><b>matrix-game-hpc</b></a><br><sub>Matrix-Game-2.0 deployment on Northeastern Explorer HPC — docs, logs, and scripts</sub></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/storyverse"><b>storyverse</b></a><br><sub>Turn any children's storybook into an animated film — FLUX illustrations, Wan 2.2 animation, Edge TTS narra…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
   </tr>
 </table>
 <!--RECENT_PROJECTS:END-->
@@ -108,7 +109,7 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 <div align="center">
 
-*Away from the screen: chess, tennis, and a slow walk through a philosophy reading list. Right now it's <b>To Kill a Mockingbird</b>, with Russell's <i>The Problems of Philosophy</i> on deck. Borrowed beliefs bore me.*
+*Away from the screen: chess, tennis, and slowly working through a philosophy reading list. Borrowed beliefs bore me.*
 
 <sub>📊 The "things I've built" list and the snake both refresh themselves on a schedule, so this page is never quite stale.</sub>
 
