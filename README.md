@@ -70,27 +70,6 @@ Most of what I build doesn't work the first time. I've had research bets collaps
 
 ---
 
-### 📌 A few things I've built
-
-<!--RECENT_PROJECTS:START-->
-<table>
-  <tr>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/microDLM"><b>microDLM</b></a> ⭐ 1<br><sub>From-scratch discrete diffusion language model on Tiny Shakespeare — 5 changes from GPT</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/reinforcing_dLLMs"><b>reinforcing_dLLMs</b></a><br><sub>Independent, constrained-compute reproduction of d1's diffu-GRPO (RL for diffusion LLMs) + a planned novel…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/phantom-gradients"><b>phantom-gradients</b></a><br><sub>Synthetic testbed for distributional SSL regularizers when intrinsic dim K << embedding dim D (WorldModel/R…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/Job_Hunter"><b>Job_Hunter</b></a><br><sub>Autonomous internship application agent — discovers jobs, fills applications deterministically, runs 24/7 o…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-  </tr>
-  <tr>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/opsgraph"><b>opsgraph</b></a><br><sub>Enterprise three-way-match reconciliation on a Neo4j operational-intelligence graph, with an agentic-RAG la…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-    <td align="center" width="50%" valign="top"><a href="https://github.com/BrutalCaeser/block-diffusion-pareto"><b>block-diffusion-pareto</b></a><br><sub>Block-size Pareto frontier for Block-Diffusion LMs (BD3-LMs): why is block size 32 the production sweet spo…</sub><br><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/></td>
-  </tr>
-</table>
-<!--RECENT_PROJECTS:END-->
-
----
-
 ### 🧰 Tools I reach for
 
 <p>

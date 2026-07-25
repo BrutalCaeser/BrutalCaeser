@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Regenerate the 'things I've built' section of the profile README.
+"""Refresh the "Most-used languages" bar in the profile README.
 
-Pulls the user's most recently pushed public, non-fork repositories and renders
-them as a 2-column table between the RECENT_PROJECTS markers. Run weekly by
+Computes the language mix across the user's owned public, non-fork repos and
+renders it as shields between the LANGS markers. Run weekly by
 .github/workflows/update-profile.yml. Uses only the stdlib + GITHUB_TOKEN.
 """
 import json
@@ -11,15 +11,7 @@ import re
 import urllib.request
 
 USER = "BrutalCaeser"
-START = "<!--RECENT_PROJECTS:START-->"
-END = "<!--RECENT_PROJECTS:END-->"
-COUNT = 6
 README = "README.md"
-
-# Curated set for the "A few things I've built" section, rendered in this order.
-# The set is fixed; each repo's description / stars / language still refresh live.
-PINNED = ["microDLM", "reinforcing_dLLMs", "phantom-gradients",
-          "Job_Hunter", "opsgraph", "block-diffusion-pareto"]
 
 LANG_COLORS = {
     "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
@@ -39,26 +31,6 @@ def api(path):
     )
     with urllib.request.urlopen(req) as r:
         return json.load(r)
-
-
-def card(repo):
-    name = repo["name"]
-    desc = (repo.get("description") or "").strip()
-    if len(desc) > 110:
-        desc = desc[:107].rstrip() + "…"
-    lang = repo.get("language")
-    badge = ""
-    if lang:
-        color = LANG_COLORS.get(lang, "586069")
-        label = lang.replace(" ", "%20").replace("+", "%2B")
-        badge = f'<br><img src="https://img.shields.io/badge/{label}-{color}?style=flat-square"/>'
-    stars = repo.get("stargazers_count", 0)
-    star = f" ⭐ {stars}" if stars else ""
-    sub = f'<br><sub>{desc}</sub>' if desc else ''
-    return (
-        f'<td align="center" width="50%" valign="top">'
-        f'<a href="{repo["html_url"]}"><b>{name}</b></a>{star}{sub}{badge}</td>'
-    )
 
 
 def lang_bar(repos):
@@ -92,28 +64,14 @@ def replace_block(content, start, end, body):
 
 
 def main():
-    repos = api(f"/users/{USER}/repos?per_page=100&sort=pushed&type=owner")  # for the language bar
-    picks = []
-    for name in PINNED:
-        try:
-            picks.append(api(f"/repos/{USER}/{name}"))
-        except Exception as e:
-            print(f"  ! skipped {name}: {e}")
-
-    rows = []
-    for i in range(0, len(picks), 2):
-        rows.append("  <tr>\n    " + "\n    ".join(card(r) for r in picks[i:i + 2]) + "\n  </tr>")
-    table = "<table>\n" + "\n".join(rows) + "\n</table>"
-
+    repos = api(f"/users/{USER}/repos?per_page=100&sort=pushed&type=owner")
     with open(README, encoding="utf-8") as f:
         content = f.read()
-    new = replace_block(content, START, END, table)
-    new = replace_block(new, "<!--LANGS:START-->", "<!--LANGS:END-->", lang_bar(repos))
-
+    new = replace_block(content, "<!--LANGS:START-->", "<!--LANGS:END-->", lang_bar(repos))
     if new != content:
         with open(README, "w", encoding="utf-8") as f:
             f.write(new)
-        print(f"Updated: {len(picks)} repos + language bar.")
+        print("Updated language bar.")
     else:
         print("No change.")
 
