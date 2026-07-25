@@ -16,10 +16,10 @@ END = "<!--RECENT_PROJECTS:END-->"
 COUNT = 6
 README = "README.md"
 
-# Repos surfaced elsewhere on the profile; skip so the list stays fresh.
-SKIP = {"BrutalCaeser", "BrutalCaeser.github.io", "reinforcing_dLLMs",
-        "block-diffusion-pareto", "phantom-gradients", "Flow-Language-Model",
-        "physical_ai"}
+# Curated set for the "A few things I've built" section, rendered in this order.
+# The set is fixed; each repo's description / stars / language still refresh live.
+PINNED = ["microDLM", "reinforcing_dLLMs", "phantom-gradients",
+          "Job_Hunter", "opsgraph", "block-diffusion-pareto"]
 
 LANG_COLORS = {
     "Python": "3776AB", "JavaScript": "F7DF1E", "TypeScript": "3178C6",
@@ -92,12 +92,13 @@ def replace_block(content, start, end, body):
 
 
 def main():
-    repos = api(f"/users/{USER}/repos?per_page=100&sort=pushed&type=owner")
-    picks = [
-        r for r in repos
-        if not r["fork"] and not r["private"] and not r.get("archived")
-        and r["name"] not in SKIP
-    ][:COUNT]
+    repos = api(f"/users/{USER}/repos?per_page=100&sort=pushed&type=owner")  # for the language bar
+    picks = []
+    for name in PINNED:
+        try:
+            picks.append(api(f"/repos/{USER}/{name}"))
+        except Exception as e:
+            print(f"  ! skipped {name}: {e}")
 
     rows = []
     for i in range(0, len(picks), 2):
